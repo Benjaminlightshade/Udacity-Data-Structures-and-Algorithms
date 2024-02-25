@@ -1,0 +1,25 @@
+Time complexity of various tasks. 
+
+Task 0:
+O(1). The number of lines needed to get to the output does not depend on the size of the input. 
+
+Task 1: 
+O(N^2 + K^2). N and K refer to the number of items in texts.csv and calls.csv respectively. The program 
+iterates through each item in both CSV files once using 2 for loops. In each for loop, there are 'in'
+operators which are O(N) in complexity, that multiplies the complexity of the for loop. 
+
+Task 2:
+O(N^2). N refers to the number of items in calls.csv. The time complexity of the code here is similar 
+to task 1. Other functions such as list() are similarly O(N) and lower in order. 
+
+Task 3:
+O(N^2 + nlog(n)). N refers to the number of items in calls.csv. Similar to tasks 1 and 2, there is a for
+loop that calls for a function which has the operator 'in'. This section is O(n^2) in complexity. The sort
+function used is nlog(n) in complexity and it does not exist inside the for loop. Thus, it adds to the 
+complexity. Other operators used are of lower order and disregarded. In this case, O(nlog(n)) may also be 
+disregarded due to its lower order compared to O(N^2).
+
+Task 4:
+O(N + K + nlog(n)). N and K refer to the number of items in texts.csv and calls.csv respectively and n refers 
+to the size of the telemarketerset. Similar to task 1, 2 for loops iterate over N and K items in the texts 
+and calls csv files. The sort function is also used here, which is nlog(n) in complexity. 
